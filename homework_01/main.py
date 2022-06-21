@@ -22,11 +22,12 @@ PRIME = "prime"
 
 def is_prime(num):
     k = 0
-    for i in range(2, num // 2 + 1):
-        if num % i == 0:
-            k += 1
-    if k == 0:
-        return num
+    if num > 1:
+        for i in range(2, num // 2 + 1):
+            if num % i == 0:
+                k += 1
+        if k == 0:
+            return num
 
 
 def filter_numbers(nums_list, filter_type):
