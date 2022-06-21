@@ -19,9 +19,17 @@ ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
-def is_prime(*nums)
 
-def filter_numbers():
+def is_prime(num):
+    k = 0
+    for i in range(2, num // 2 + 1):
+        if num % i == 0:
+            k += 1
+    if k == 0:
+        return num
+
+
+def filter_numbers(nums_list, filter_type):
     """
     функция, которая на вход принимает список из целых чисел,
     и возвращает только чётные/нечётные/простые числа
@@ -32,3 +40,9 @@ def filter_numbers():
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
+    if filter_type == ODD:
+        return [num for num in nums_list if num % 2 != 0]
+    elif filter_type == PRIME:
+        return [num for num in nums_list if is_prime(num)]
+    elif filter_type == EVEN:
+        return [num for num in nums_list if num % 2 == 0]
