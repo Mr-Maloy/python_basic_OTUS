@@ -10,3 +10,5 @@ class Car(Vehicle):
         if not isinstance(client, Engine):
             raise TypeError("Not an 'Engine' object!")
         self.engine = client
+
+# Комментарий для Pull Request

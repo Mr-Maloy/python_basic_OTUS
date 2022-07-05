@@ -8,3 +8,5 @@ class NotEnoughFuel(Exception):
 
 class CargoOverload(Exception):
     pass
+
+# Комментарий для Pull Request
