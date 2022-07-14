@@ -5,3 +5,5 @@ from dataclasses import dataclass
 class Engine:
     volume: float
     pistons: int
+
+# Комментарий для Pull Request

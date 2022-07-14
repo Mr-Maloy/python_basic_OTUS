@@ -28,3 +28,5 @@ class Vehicle(ABC):
             raise NotEnoughFuel("Not enough fuel to go so far")
         else:
             self.fuel -= distance * self.fuel_consumption
+
+# Комментарий для Pull Request

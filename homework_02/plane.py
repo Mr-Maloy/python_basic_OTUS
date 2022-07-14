@@ -22,3 +22,5 @@ class Plane(Vehicle):
         removed_cargo = self.cargo
         self.cargo = 0
         return removed_cargo
+
+# Комментарий для Pull Request
