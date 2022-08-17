@@ -1,3 +1,10 @@
+"""
+Чтобы собрать контейнер выполните команду:
+docker build . -t app
+
+Чтобы запустить контейнер, выполните команду:
+docker run -p 8000:8000 -it app
+"""
 FROM python:3.10-bullseye
 
 WORKDIR /app
